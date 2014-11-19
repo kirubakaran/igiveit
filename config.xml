@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.igiveit" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.igiveit.app.pub" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>IGiveIt</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        I Give It - The Movie
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="igiveit@kirubakaran.com" href="http://cordova.io">
+        K A
     </author>
     <content src="index.html" />
     <access origin="*" />

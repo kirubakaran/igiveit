@@ -1,16 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.igiveit.app.pub" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>IGiveIt</name>
+<widget 
+    id="com.igiveit.app.pub" 
+    version="0.1.1" 
+    xmlns="http://www.w3.org/ns/widgets" 
+    xmlns:gap="http://phonegap.com/ns/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>I Give It</name>
     <description>
-        I Give It - The Movie
+        Kiru test app
     </description>
     <author email="igiveit@kirubakaran.com" href="http://cordova.io">
-        K A
+        Kirubakaran
     </author>
     <content src="index.html" />
+
     <access origin="*" />
+
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+
     <preference name="phonegap-version" value="3.6.3" />
+
+    <!-- Android SDK Version -->
+    <preference name="android-minSdkVersion" value="14" />
+    <!-- iOS Version -->
+    <preference name="deployment-target" value="7.0" />
+
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+
+    <preference name="target-device" value="handset" />
+    <preference name="disallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="detect-data-types" value="false" />
+
     <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.geolocation" />
-    <gap:plugin name="org.transistorsoft.cordova.background-geolocation" />
+
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+
+
 </widget>

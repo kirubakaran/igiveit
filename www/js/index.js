@@ -34,6 +34,11 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        //we add this so the app asks for permission
+        window.navigator.geolocation.getCurrentPosition(function(location) {
+            console.log('Location from Phonegap');
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
